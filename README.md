@@ -144,7 +144,3 @@ This project is ideal for:
 GigShield demonstrates how **technology + data + AI** can transform traditional insurance into a **smart, automated, and fair system** for gig workers.
 
 ---
-
-
-
-This project is for educational purposes.
