@@ -1,70 +1,196 @@
-# Getting Started with Create React App
+# 🛡️ GigShield – Risk-Based Insurance for Gig Workers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
 
-## Available Scripts
+**GigShield** is a smart, location-aware insurance platform designed for gig workers such as delivery partners (Zomato, Swiggy, etc.).
+It calculates **personalized risk scores** based on real-world conditions and provides **dynamic insurance premiums** along with automated claim processing.
 
-In the project directory, you can run:
+The system aims to ensure **financial protection, fairness, and fast claim settlement** using data-driven insights.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔐 Authentication System
 
-### `npm test`
+* Secure login and registration
+* Separate roles: **Worker** and **Admin**
+* Demo accounts available for testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 📍 Location-Based Risk Assessment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Users select:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * State
+  * District
+  * Area
+* Risk is calculated based on hyper-local data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 📊 AI Risk Calculation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The risk score is computed using:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* 🌊 Flood Risk
+* ☀️ Heat Risk
+* 😷 Air Pollution (AQI)
+* 🚫 Strike / Curfew Risk
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Each factor contributes to a **composite risk score (0–100)**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 💰 Dynamic Premium Calculation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Premium is determined using:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Risk Score
+* Platform (Zomato, Swiggy, etc.)
+* Weekly Earnings
 
-### Code Splitting
+Plans available:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Basic
+* Standard
+* Premium
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📋 Worker Dashboard
 
-### Making a Progressive Web App
+* View active policy
+* Track claims
+* Check risk score
+* View weekly premium
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### ⚡ Automated Claims System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Parametric insurance model
+* Claims triggered automatically when:
 
-### Deployment
+  * Rainfall exceeds threshold
+  * Temperature crosses limit
+  * AQI becomes hazardous
+* Reduces manual paperwork
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 🌧️ Real-Time Alerts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Weather and disruption alerts
+* Area-specific notifications
+* Trigger-based claim indication
+
+---
+
+### 🛠️ Admin Dashboard
+
+* Monitor all workers
+* Manage claims
+* Fraud detection system
+* Analytics & insights
+
+---
+
+## 🧠 How It Works
+
+1. User registers and selects location
+2. System calculates risk score using predefined factors
+3. Premium is dynamically generated
+4. User purchases policy
+5. If disruption occurs → claim is triggered automatically
+
+---
+
+## 🏗️ Tech Stack
+
+* **Frontend:** React.js
+* **Language:** JavaScript
+* **Styling:** CSS (Custom UI)
+* **State Management:** React Hooks (`useState`)
+* **Data Handling:** Mock Database (JSON-based)
+
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/gigshield.git
+cd gigshield
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the application
+
+```bash
+npm start
+```
+
+### 4️⃣ Open in browser
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔑 Demo Credentials
+
+### 👤 Worker Login
+
+```
+Email: ravi@gmail.com  
+Password: ravi123
+```
+
+### 👨‍💼 Admin Login
+
+```
+Email: admin@gigshield.in  
+Password: admin123
+```
+
+---
+
+## 📈 Future Enhancements
+
+* Integration with real-time weather APIs (IMD)
+* GPS-based live tracking
+* Mobile application version
+* Payment gateway integration
+* Firebase / Backend authentication
+
+---
+
+## 🎓 Use Case
+
+This project is ideal for:
+
+* Academic projects
+* Hackathons
+* Insurance-tech innovation
+* Gig economy solutions
+
+---
+
+## 📌 Conclusion
+
+GigShield demonstrates how **technology + data + AI** can transform traditional insurance into a **smart, automated, and fair system** for gig workers.
+
+---
+
+
+
+This project is for educational purposes.
