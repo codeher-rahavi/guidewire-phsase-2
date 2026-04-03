@@ -117,52 +117,6 @@ Plans available:
 
 ---
 
-## 🚀 Installation & Setup
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/your-username/gigshield.git
-cd gigshield
-```
-
-### 2️⃣ Install dependencies
-
-```bash
-npm install
-```
-
-### 3️⃣ Run the application
-
-```bash
-npm start
-```
-
-### 4️⃣ Open in browser
-
-```
-http://localhost:3000
-```
-
----
-
-## 🔑 Demo Credentials
-
-### 👤 Worker Login
-
-```
-Email: ravi@gmail.com  
-Password: ravi123
-```
-
-### 👨‍💼 Admin Login
-
-```
-Email: admin@gigshield.in  
-Password: admin123
-```
-
----
 
 ## 📈 Future Enhancements
 
